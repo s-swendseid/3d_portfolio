@@ -24,9 +24,7 @@ const ServiceCard = ({ index, title, icon }) => {
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt="title" className="w-16 h-16 obejct-contain" />
-          <h3 className="text-white text-20px font-bold text-center">
-            {title}
-          </h3>
+          <h3 className="text-20px font-bold text-center">{title}</h3>
         </div>
       </motion.div>
     </Tilt>
@@ -43,16 +41,26 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-white text-[17px]  leading-[30px]"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm an aspiring frontend developer with experience in React and Vue.js.
+        In my dynamic journey, I leveraged my two years at Montana State
+        University to build a foundational understanding of computer science.
+        Furthering my commitment to growth, I completed the Meta Front-End
+        Developer Professional Certificate in just a month and a half,
+        showcasing my dedication to rapid skill acquisition. Notably, during my
+        first internship, I self-taught myself HTML and CSS, showcasing my
+        commitment during my first internship with Cafeteros de la Montaña,
+        which lead to my interest in Computer Science. In my role as the lead
+        End-to-End Test Intern, I managed and optimized over 200 tests, ensuring
+        the software's integrity. This foundation paved the way for leadership
+        which became instrumental in leading the redesign of Foundant
+        Technologies' product. These experiences, coupled with my formal
+        education, reflect my versatility and passion for delivering impactful
+        results in collaborative team environments.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 mx-auto">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

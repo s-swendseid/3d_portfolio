@@ -8,21 +8,17 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
+  vuejs,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  foundant,
+  pinme,
+  gericht,
+  piano,
 } from "../assets";
 
 export const navLinks = [
@@ -46,15 +42,15 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Web Designer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Fitness Coach",
     icon: creator,
   },
 ];
@@ -81,10 +77,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -93,8 +85,8 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Vue JS",
+    icon: vuejs,
   },
   {
     name: "Three JS",
@@ -116,55 +108,51 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Engineering Intern",
+    company_name: "Foundant Technologies",
+    icon: foundant,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "October 10th, 2022 - April 14th, 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Collaborated with the UI/UX designer to contribute to the Vue.js-based redesign of the company product, resulting in a 20% increase in usability metrics and overall client satisfaction.",
+      "Implemented an event-driven microservices environment using AWS, optimizing infrastructure for scalability and efficiency, leading to a 15% decrease in downtime during high-traffic periods.",
+      "Leveraged Golang for backend development, seamlessly integrating unit tests to ensure code integrity.",
+      "Improved software stability and reduced post-deployment issues by 20% through CI/CD integration.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "End-to-End Test Intern",
+    company_name: "Foundant Technologies",
+    icon: foundant,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "September 14th, 2021 - October 10th, 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained 200+ end-to-end automated unit tests using JavaScript, Cypress Test Automation, and BDD practices, ensuring the integrity of new software features and reducing post-release bugs by 20%.",
+      "Enhanced user accessibility through the implementation of validation tests using Level Access, ensuring the software's easy accessibility and compliance, resulting in a 10% improvement in overall software accessibility.",
+      "Managed and optimized 3 live products, ensuring the applications' seamless behavior from the end user's perspective, leading to an increase in client satisfaction.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Client Services Intern -",
+    company_name: "Foundant Technologies",
+    icon: foundant,
+    iconBg: "#E6DEDD",
+    date: "September 16th, 2020 - September 12th, 2021",
+    points: [
+      "Answered incoming phone calls, chats, and emails while being able to read and address client issues in a positive way.",
+      "Updated documentation of client interactions through Salesforce and Zendesk.",
+      "Experienced front-end design customizing client sites using HTMLand CSS.",
+    ],
+  },
+  {
+    title: "Web Design Intern",
+    company_name: "Cafeteros de la Montaña",
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "June 1st, 2020 - June 30th, 2020",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Implemented self-taught front-end development skills (HTML, CSS, Bootstrap) to completely redesign the company website, enhancing the visual appeal and user-friendliness.",
+      "Managed social media accounts, increasing online engagement by 10% during the internship period.",
+      "Collaborated with the team to assess and meet employer's needs, implementing a strategic action plan leading to a 100% increase in improved workflow efficiency and enhanced overall customer satisfaction.",
     ],
   },
 ];
@@ -198,16 +186,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "PinMe",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Simple social media app that includes features such as Google Authentication, create, edit, delete and save posts, like, comment on other people's posts.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "sanity",
         color: "green-text-gradient",
       },
       {
@@ -215,41 +203,21 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: pinme,
+    source_code_link: "https://github.com/s-swendseid/social-media-app",
+    source_code_link: "https://pinmeswendseid.netlify.app/login",
   },
   {
-    name: "Job IT",
+    name: "Modern UI/UX Restaurant",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A fully responsive modern restaurant page built from a Figma design. This single page website features a great landing page with a functional video player, and much more.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "figma",
         color: "green-text-gradient",
       },
       {
@@ -257,8 +225,31 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: gericht,
+    source_code_link: "https://github.com/s-swendseid/fine-dining-restaurant",
+    source_code_link: "https://resturantsiteswendseid.netlify.app/",
+  },
+  {
+    name: "Piano",
+    description:
+      "One of my first solo projects, a super simple piano built using HTML, CSS, and some simple Javascript. This features audio clips from Interact Archive",
+    tags: [
+      {
+        name: "javascript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "html",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: piano,
+    source_code_link: "https://github.com/s-swendseid/playing-piano",
+    source_code_link: "https://simplepianoswendseid.netlify.app/",
   },
 ];
 
