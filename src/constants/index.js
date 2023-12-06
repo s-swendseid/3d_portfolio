@@ -205,7 +205,7 @@ const projects = [
     ],
     image: pinme,
     source_code_link: "https://github.com/s-swendseid/social-media-app",
-    source_code_link: "https://pinmeswendseid.netlify.app/login",
+    website_link: "https://pinmeswendseid.netlify.app/login",
   },
   {
     name: "Modern UI/UX Restaurant",
@@ -227,7 +227,7 @@ const projects = [
     ],
     image: gericht,
     source_code_link: "https://github.com/s-swendseid/fine-dining-restaurant",
-    source_code_link: "https://resturantsiteswendseid.netlify.app/",
+    website_link: "https://resturantsiteswendseid.netlify.app/",
   },
   {
     name: "Piano",
@@ -249,7 +249,7 @@ const projects = [
     ],
     image: piano,
     source_code_link: "https://github.com/s-swendseid/playing-piano",
-    source_code_link: "https://simplepianoswendseid.netlify.app/",
+    website_link: "https://simplepianoswendseid.netlify.app/",
   },
 ];
 

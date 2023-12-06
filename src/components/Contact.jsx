@@ -68,8 +68,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-[#DFE0E1] p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={`${styles.sectionHeadText} `}>Contact.</h3>
+        <p className={styles.sectionSubTextContact}>Get in touch</p>
+        <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
           ref={formRef}
@@ -77,14 +77,16 @@ const Contact = () => {
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-black font-medium mb-4">Your Name</span>
+            <span className="text-black font-medium mb-4">
+              First & Last Name
+            </span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your good name?"
-              className="bg-white py-4 px-6 placeholder:text-tertiary  rounded-lg outline-none border-none font-medium"
+              placeholder="Name"
+              className="bg-white py-4 px-6 text-tertiary rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -94,8 +96,8 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
-              className="bg-white py-4 px-6 placeholder:text-tertiary text-white rounded-lg outline-none border-none font-medium"
+              placeholder="Email"
+              className="bg-white py-4 px-6 text-tertiary rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -106,7 +108,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
-              className="bg-white py-4 px-6 placeholder:text-tertiary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-white py-4 px-6 text-tertiary rounded-lg outline-none border-none font-medium"
             />
           </label>
 
