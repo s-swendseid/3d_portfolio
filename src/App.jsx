@@ -1,3 +1,4 @@
+import { useMediaQuery } from 'react-responsive';
 import { BrowserRouter } from "react-router-dom";
 
 import {
@@ -12,6 +13,8 @@ import {
 } from "./components";
 
 const App = () => {
+  const isMobile = useMediaQuery({ maxWidth: 1000 });
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
@@ -25,7 +28,7 @@ const App = () => {
           <Tech />
           <Works />
           <Contact />
-          <StarsCanvas />
+          {!isMobile && <StarsCanvas />}
         </div>
       </div>
     </BrowserRouter>
